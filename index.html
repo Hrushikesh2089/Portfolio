@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hrushikesh Kale - Full Stack Developer & ML Enthusiast</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Background Shapes -->
+  <div class="bg-shapes">
+    <div class="shape w-96 h-96 bg-blue-500 top-10 left-10"></div>
+    <div class="shape w-64 h-64 bg-violet-500 top-1/2 right-10"></div>
+    <div class="shape w-80 h-80 bg-cyan-400 bottom-10 left-1/3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 glassmorphism">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <div class="text-2xl font-bold gradient-text"><span class="text-blue-400">&lt;HK&gt;</span></div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="hover:text-blue-400 transition-colors">Home</a>
+          <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+          <a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a>
+          <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+          <a href="#timeline" class="hover:text-blue-400 transition-colors">Timeline</a>
+          <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+        </div>
+        <button id="theme-toggle" class="p-2 rounded-full glassmorphism hover:neon-glow transition-all hidden">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <div class="text-2xl font-bold gradient-text"><span class="text-blue-400">&lt;/HK&gt;</span></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <div class="container mx-auto px-6 text-center">
+      <div class="floating-icon absolute top-20 left-10 text-4xl text-blue-400 opacity-20">
+        <i class="fab fa-react"></i>
+      </div>
+      <div class="floating-icon absolute top-40 right-20 text-3xl text-violet-400 opacity-20"
+        style="animation-delay: -2s;">
+        <i class="fab fa-node-js"></i>
+      </div>
+      <div class="floating-icon absolute bottom-40 left-20 text-3xl text-cyan-400 opacity-20"
+        style="animation-delay: -4s;">
+        <i class="fab fa-python"></i>
+      </div>
+      <div class="floating-icon absolute bottom-10 right-10 text-3xl opacity-20" style="animation-delay: -1.5s;">
+        <i class="fab fa-github text-white"></i>
+      </div>
+
+      <h1 class="hero-title serif scroll-reveal animate-fade-up">
+        Hrushikesh <br> Kale
+      </h1>
+      <p class="text-2xl md:text-3xl mb-4 text-gray-300 scroll-reveal animate-fade-up delay-100">
+        Full Stack Developer & ML Enthusiast
+      </p>
+      <p class="text-lg mb-8 text-gray-400 max-w-2xl mx-auto scroll-reveal animate-fade-up delay-200">
+        Crafting digital experiences with cutting-edge technology and creative innovation
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
+        <a href="https://drive.google.com/uc?export=download&id=1PjaqvExOMnYZYW0wf9zjBa4smscKthfB" download
+          class="inline-block">
+          <button
+            class="px-8 py-4 bg-gradient-to-r from-blue-600 to-violet-600 rounded-full font-semibold hover:neon-glow transition-all transform hover:scale-105">
+            <i class="fas fa-download mr-2"></i>Download Resume
+          </button>
+        </a>
+        <button
+          class="px-8 py-4 glassmorphism rounded-full font-semibold hover:neon-glow transition-all transform hover:scale-105"
+          id="connect-btn">
+          <i class="fas fa-rocket mr-2"></i>Let's Connect
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-7xl font-bold text-center mb-16 scroll-reveal hero-title serif gradient-text leading-tight">About
+        Me</h2>
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- Lottie Animation or Image -->
+        <div class="scroll-reveal flex justify-center">
+          <div class="glassmorphism rounded-3xl w-80 h-96 flex items-center justify-center overflow-hidden">
+            <img src="assets/photo-nobg.png" alt="Hrushikesh Kale" class="object-cover w-full h-full rounded-3xl" />
+          </div>
+        </div>
+
+        <!-- About Content -->
+        <div class="scroll-reveal glassmorphism rounded-3xl p-8">
+          <h3 class="text-2xl font-bold mb-6 gradient-text">Passionate Developer & Innovator</h3>
+          <p class="text-gray-300 mb-6 leading-relaxed text-justify">
+            As a passionate and skilled Final year Computer Science undergraduate specializing in Artificial
+            Intelligence, I aspire to contribute to innovative
+            software solutions through my strong foundation in full-stack web development, Artificial Intelligence and
+            machine learning. With
+            hands-on experience in real-world projects such as a facial recognition-based attendance system and a Resort
+            booking web platform, I
+            have developed expertise in technologies like MongoDB, Express, React, Node.js, Flask, OpenCV, and API
+            integration.
+          </p>
+
+          <!-- Interests -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div class="text-center p-4 glassmorphism rounded-xl hover:neon-glow transition-all duration-300">
+              <i class="fas fa-code text-2xl text-blue-400 mb-2"></i>
+              <p class="text-sm">Frontend</p>
+            </div>
+            <div class="text-center p-4 glassmorphism rounded-xl hover:neon-glow transition-all duration-300">
+              <i class="fas fa-server text-2xl text-violet-400 mb-2"></i>
+              <p class="text-sm">Backend</p>
+            </div>
+            <div class="text-center p-4 glassmorphism rounded-xl hover:neon-glow transition-all duration-300">
+              <i class="fas fa-database text-2xl text-cyan-400 mb-2"></i>
+              <p class="text-sm">Database</p>
+            </div>
+            <div class="text-center p-4 glassmorphism rounded-xl hover:neon-glow transition-all duration-300">
+              <i class="fas fa-laptop-code text-2xl text-pink-400 mb-2"></i>
+              <p class="text-sm">AIML</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-7xl font-bold text-center mb-16 gradient-text hero-title serif scroll-reveal leading-tight">Skills
+        & Experties
+      </h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Frontend -->
+        <div class="glassmorphism rounded-3xl p-8 scroll-reveal text-center">
+          <div class="flex justify-center mb-4">
+            <!-- <i class="fas fa-paint-brush text-4xl text-white"></i> -->
+          </div>
+          <h3 class="text-xl font-bold gradient-text mb-2">Frontend Development</h3>
+          <p class="text-gray-300 mb-6 text-sm">Creating responsive and interactive UIs using React.js, modern CSS, and
+            web technologies.</p>
+          <div class="grid grid-cols-3 gap-4 items-center justify-center text-center text-white text-sm">
+            <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                class="w-10 h-10 mx-auto" />
+              <p>HTML</p>
+            </div>
+            <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                class="w-10 h-10 mx-auto" />
+              <p>CSS</p>
+            </div>
+            <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                class="w-10 h-10 mx-auto" />
+              <p>JavaScript</p>
+            </div>
+            <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                class="w-10 h-10 mx-auto" />
+              <p>React.js</p>
+            </div>
+            <div>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                class="w-10 h-10 mx-auto" />
+              <p>Tailwind</p>
+            </div>
+            <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                class="w-10 h-10 mx-auto" />
+              <p>Bootstrap</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="glassmorphism rounded-3xl p-8 delay-100 scroll-reveal text-center">
+          <div class="flex justify-center mb-4">
+            <!-- <i class="fas fa-server text-4xl text-white"></i> -->
+          </div>
+          <h3 class="text-xl font-bold gradient-text mb-2">Backend Development</h3>
+          <p class="text-gray-300 mb-6 text-sm">Building robust server-side apps using Node.js, Express.js, and MongoDB.
+          </p>
+          <div class="grid grid-cols-3 gap-4 items-center justify-center text-center text-white text-sm">
+            <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                class="w-10 h-10 mx-auto" />
+              <p>Node.js</p>
+            </div>
+            <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                class="w-10 h-10 mx-auto invert" />
+              <p>Express</p>
+            </div>
+            <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                class="w-10 h-10 mx-auto" />
+              <p>MongoDB</p>
+            </div>
+            <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
+                class="w-10 h-10 mx-auto" />
+              <p>SQL</p>
+            </div>
+            <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                class="w-10 h-10 mx-auto invert" />
+              <p>GitHub</p>
+            </div>
+            <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+                class="w-10 h-10 mx-auto" />
+              <p>Postman</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Machine Learning -->
+        <div class="glassmorphism rounded-3xl p-8 delay-200 scroll-reveal text-center">
+          <div class="flex justify-center mb-4">
+            <i class="fas fa-brain-circuit text-4xl text-white"></i>
+          </div>
+          <h3 class="text-xl font-bold gradient-text mb-2">Machine Learning</h3>
+          <p class="text-gray-300 mb-6 text-sm">Developing intelligent systems using Python, OpenCV, and ML algorithms
+            for vision & data analysis.</p>
+          <div class="grid grid-cols-3 gap-4 items-center justify-center text-center text-white text-sm">
+            <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                class="w-10 h-10 mx-auto" />
+              <p>Python</p>
+            </div>
+            <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"
+                class="w-10 h-10 mx-auto" />
+              <p>OpenCV</p>
+            </div>
+            <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+                class="w-10 h-10 mx-auto invert" />
+              <p>Flask</p>
+            </div>
+            <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg"
+                class="w-10 h-10 mx-auto" />
+              <p>Jupyter</p>
+            </div>
+            <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                class="w-10 h-10 mx-auto" />
+              <p>Docker</p>
+            </div>
+            <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
+                class="w-10 h-10 mx-auto" />
+              <p>Kubernetes</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-7xl font-bold text-center mb-16 gradient-text hero-title serif scroll-reveal leading-tight">
+        Featured Projects
+      </h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="project-card glassmorphism rounded-3xl p-6 scroll-reveal">
+          <div class="relative h-48 rounded-2xl mb-6 overflow-hidden">
+            <img src="assets/atithistay_index_page.png" alt="atithistay_index_page" class="h-full w-full object-fit">
+          </div>
+
+          <h3 class="text-xl font-bold mb-3 gradient-text">AtithiStay</h3>
+          <p class="text-gray-400 mb-4">
+            Developed and deployed a full-stack website for hosting and booking Resorts and Villas, built with MVC
+            framework.
+          </p>
+
+          <!-- Pills -->
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fab fa-html5"></i> HTML
+            </span>
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fab fa-css3-alt"></i> CSS
+            </span>
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fab fa-js"></i> JavaScript
+            </span>
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fab fa-node-js"></i> Node.js
+            </span>
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fas fa-server"></i> Express.js
+            </span>
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fas fa-database"></i> MongoDB
+            </span>
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fab fa-bootstrap"></i> Bootstrap
+            </span>
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fas fa-edit"></i> CRUD
+            </span>
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fas fa-random"></i> RESTful API
+            </span>
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fas fa-credit-card"></i> Payments
+            </span>
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fas fa-layer-group"></i> MVC
+            </span>
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fas fa-map-marked-alt"></i> Maps
+            </span>
+          </div>
+
+
+          <!-- Buttons -->
+          <div class="w-full flex gap-4 mt-4">
+            <!-- View Project Button with External Link Icon -->
+            <a href="https://atithistay-by-hrushi.onrender.com" target="_blank" class="w-1/2">
+              <button
+                class="w-full py-3 bg-gradient-to-r from-blue-600 to-violet-600 rounded-xl font-semibold text-white hover:neon-glow transition-all flex items-center justify-center gap-2">
+                <i class="fas fa-external-link-alt"></i>
+                View Project
+              </button>
+            </a>
+
+            <!-- View GitHub Repo Button with GitHub Icon -->
+            <a href="https://github.com/Hrushikesh2089/AtithiStay" target="_blank" class="w-1/2">
+              <button
+                class="w-full py-3 bg-gradient-to-r from-blue-600 to-violet-600 rounded-xl font-semibold text-white hover:neon-glow transition-all flex items-center justify-center gap-2">
+                <i class="fab fa-github"></i>
+                GitHub Repo
+              </button>
+            </a>
+          </div>
+
+
+        </div>
+
+
+        <div class="project-card glassmorphism rounded-3xl p-6 delay-100 scroll-reveal">
+          <div class="relative h-48 rounded-2xl mb-6 overflow-hidden">
+            <img src="assets/attendance_marker_index_page.png" alt="attendance_marker_index_page" class="h-full w-full object-fit">
+          </div>
+          <h3 class="text-xl font-bold mb-3 gradient-text">Attendance Marker</h3>
+          <p class="text-gray-400 mb-4">Designed and developed a machine learning-based face detection system to
+            automate the attendance process, eliminating manual errors and enhancing efficiency.</p>
+          <!-- Pills -->
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fab fa-python"></i> Python
+            </span>
+
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fas fa-flask"></i> Flask
+            </span>
+
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fas fa-eye"></i> OpenCV
+            </span>
+
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fab fa-html5"></i> HTML
+            </span>
+
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fab fa-css3-alt"></i> CSS
+            </span>
+
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fab fa-bootstrap"></i> Bootstrap
+            </span>
+          </div>
+
+
+          <!-- Buttons -->
+          <div class="w-full flex gap-4 mt-4">
+            <!-- View Project Button with External Link Icon -->
+            <a href="https://drive.google.com/drive/folders/1oPxVJyotuqSDAhzp6PGiMDC8XuMvrFuZ?usp=sharing"
+              target="_blank" class="w-1/2">
+              <button
+                class="w-full py-3 bg-gradient-to-r from-blue-600 to-violet-600 rounded-xl font-semibold text-white hover:neon-glow transition-all flex items-center justify-center gap-2">
+                <i class="fas fa-external-link-alt"></i>
+                View Project
+              </button>
+            </a>
+
+            <!-- View GitHub Repo Button with GitHub Icon -->
+            <a href="https://github.com/Hrushikesh2089/Attendance-Marker" target="_blank" class="w-1/2">
+              <button
+                class="w-full py-3 bg-gradient-to-r from-blue-600 to-violet-600 rounded-xl font-semibold text-white hover:neon-glow transition-all flex items-center justify-center gap-2">
+                <i class="fab fa-github"></i>
+                GitHub Repo
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card glassmorphism rounded-3xl p-6 delay-200 scroll-reveal">
+          <div
+            class="h-48 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl mb-6 flex items-center justify-center">
+            <i class="fas fa-cloud-sun text-4xl text-white"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 gradient-text">Mausam Insight</h3>
+          <p class="text-gray-400 mb-4">Developed a responsive React-based weather application that provides real-time,
+            location-specific forecasts using geolocation and weather APIs.</p>
+          <!-- Pills -->
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fab fa-react"></i> React.js
+            </span>
+
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fas fa-palette"></i> Material UI
+            </span>
+
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fas fa-plug"></i> API integration
+            </span>
+
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fab fa-html5"></i> HTML
+            </span>
+
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fab fa-css3-alt"></i> CSS
+            </span>
+          </div>
+
+
+          <!-- Buttons -->
+          <div class="w-full flex gap-4 mt-4">
+            <!-- View Project Button with External Link Icon -->
+            <a href="https://mausam-insight-by-hrushi.onrender.com/" target="_blank" class="w-1/2">
+              <button
+                class="w-full py-3 bg-gradient-to-r from-blue-600 to-violet-600 rounded-xl font-semibold text-white hover:neon-glow transition-all flex items-center justify-center gap-2">
+                <i class="fas fa-external-link-alt"></i>
+                View Project
+              </button>
+            </a>
+
+            <!-- View GitHub Repo Button with GitHub Icon -->
+            <a href="https://github.com/Hrushikesh2089/Mausam-Insight" target="_blank" class="w-1/2">
+              <button
+                class="w-full py-3 bg-gradient-to-r from-blue-600 to-violet-600 rounded-xl font-semibold text-white hover:neon-glow transition-all flex items-center justify-center gap-2">
+                <i class="fab fa-github"></i>
+                GitHub Repo
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Voluntering Section
+  <section id="projects" class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-7xl font-bold text-center mb-16 gradient-text hero-title serif scroll-reveal">Voluntering
+      </h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="project-card glassmorphism rounded-3xl p-6 scroll-reveal">
+          <div
+            class="h-48 bg-gradient-to-br from-blue-500 to-violet-600 rounded-2xl mb-6 flex items-center justify-center">
+            <i class="fas fa-hotel text-4xl text-white"></i>
+          </div>
+
+          <h3 class="text-xl font-bold mb-3 gradient-text">AtithiStay</h3>
+          <p class="text-gray-400 mb-4">
+            Developed and deployed a full-stack website for hosting and booking Resorts and Villas, built with MVC
+            framework.
+          </p>
+
+          Pills
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fab fa-html5"></i> HTML
+            </span>
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fab fa-css3-alt"></i> CSS
+            </span>
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fab fa-js"></i> JavaScript
+            </span>
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fab fa-node-js"></i> Node.js
+            </span>
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fas fa-server"></i> Express.js
+            </span>
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fas fa-database"></i> MongoDB
+            </span>
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fab fa-bootstrap"></i> Bootstrap
+            </span>
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fas fa-edit"></i> CRUD
+            </span>
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fas fa-random"></i> RESTful API
+            </span>
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fas fa-credit-card"></i> Payments
+            </span>
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fas fa-layer-group"></i> MVC
+            </span>
+            <span
+              class="px-3 py-1 rounded-full text-xs flex items-center gap-1 backdrop-blur-md bg-white/10 text-white border border-white/10 shadow-sm">
+              <i class="fas fa-map-marked-alt"></i> Maps
+            </span>
+          </div>
+
+
+          Buttons
+          <div class="w-full flex gap-4 mt-4">
+            <a href="https://atithistay-by-hrushi.onrender.com" target="_blank" class="w-1/2">
+              <button
+                class="w-full py-3 bg-gradient-to-r from-blue-600 to-violet-600 rounded-xl font-semibold text-white hover:neon-glow transition-all flex items-center justify-center gap-2">
+                <i class="fas fa-external-link-alt"></i>
+                View Project
+              </button>
+            </a>
+
+            <a href="https://github.com/Hrushikesh2089/AtithiStay" target="_blank" class="w-1/2">
+              <button
+                class="w-full py-3 bg-gradient-to-r from-blue-600 to-violet-600 rounded-xl font-semibold text-white hover:neon-glow transition-all flex items-center justify-center gap-2">
+                <i class="fab fa-github"></i>
+                GitHub Repo
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+
+  <!-- Timeline Section -->
+  <section id="timeline" class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-7xl font-bold text-center mb-16 gradient-text hero-title serif scroll-reveal leading-tight">
+        Education</h2>
+      <div class="max-w-4xl mx-auto">
+
+        <!-- B.Tech -->
+        <div class="timeline-item py-8 scroll-reveal">
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="glassmorphism rounded-3xl p-6 relative">
+              <div class="w-4 h-4 bg-gradient-to-r from-blue-500 to-violet-500 rounded-full absolute timeline-dot-left">
+              </div>
+              <h3 class="text-xl font-bold gradient-text mb-2">B.Tech in CSE (Artificial Intelligence)</h3>
+              <p class="text-gray-400 mb-1">G. H. Raisoni College of Engineering and Management, Pune</p>
+              <p class="text-sm text-gray-500 mb-2">2022 - Present | Affiliated to SPPU</p>
+              <p class="text-gray-300">Pursuing specialization in Artificial Intelligence with a strong emphasis on
+                Machine Learning, Deep Learning, and Data Science. Currently maintaining a CGPA of 8.54/10.</p>
+            </div>
+            <div></div>
+          </div>
+        </div>
+
+        <!-- HSC -->
+        <div class="timeline-item py-8 scroll-reveal">
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div></div>
+            <div class="glassmorphism rounded-3xl p-6 relative">
+              <div
+                class="w-4 h-4 bg-gradient-to-r from-violet-500 to-pink-500 rounded-full absolute timeline-dot-right">
+              </div>
+              <h3 class="text-xl font-bold gradient-text mb-2">Higher Secondary (HSC)</h3>
+              <p class="text-gray-400 mb-1">Sanjivani Junior College, Kopargaon</p>
+              <p class="text-sm text-gray-500 mb-2">2020 - 2022 | Maharashtra State Board</p>
+              <p class="text-gray-300">Completed with 86% in the Science stream, with strong performance in Mathematics,
+                Physics, and Computer Science.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SSC -->
+        <div class="timeline-item py-8 scroll-reveal">
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="glassmorphism rounded-3xl p-6 relative">
+              <div class="w-4 h-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full absolute timeline-dot-left">
+              </div>
+              <h3 class="text-xl font-bold gradient-text mb-2">Secondary School (SSC)</h3>
+              <p class="text-gray-400 mb-1">Atma Malik English Medium School, Kopargaon</p>
+              <p class="text-sm text-gray-500 mb-2">2020 | Maharashtra State Board</p>
+              <p class="text-gray-300">Completed with 85%, excelling in Science and Mathematics. Built a strong academic
+                foundation and participated actively in extracurricular activities.</p>
+            </div>
+            <div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-7xl font-bold text-center mb-16 gradient-text hero-title serif scroll-reveal leading-tight">Get In
+        Touch</h2>
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+        <div class="scroll-reveal">
+          <h3 class="text-2xl font-bold mb-6 gradient-text">Let's Connect!</h3>
+          <p class="text-gray-300 mb-8 leading-relaxed">
+            I'm always excited to discuss new opportunities, innovative projects, or just have a chat about technology
+            and development.
+          </p>
+          <div class="space-y-4">
+            <!-- GitHub -->
+            <a href="https://github.com/Hrushikesh2089" target="_blank"
+              class="flex items-center space-x-4 p-4 glassmorphism rounded-xl hover:neon-glow transition-all">
+              <i class="fab fa-github text-2xl text-blue-400"></i>
+              <span>GitHub</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/hrushikesh-kale-6a3490335/" target="_blank"
+              class="flex items-center space-x-4 p-4 glassmorphism rounded-xl hover:neon-glow transition-all">
+              <i class="fab fa-linkedin text-2xl text-blue-400"></i>
+              <span>LinkedIn</span>
+            </a>
+
+            <!-- Email -->
+            <div class="flex items-center space-x-4 p-4 glassmorphism rounded-xl hover:neon-glow transition-all">
+              <i class="fas fa-envelope text-2xl text-blue-400"></i>
+              <span>hrushikesh2019@gmail.com</span>
+            </div>
+
+            <!-- Contact -->
+            <div class="flex items-center space-x-4 p-4 glassmorphism rounded-xl hover:neon-glow transition-all">
+              <i class="fas fa-phone text-2xl text-blue-400"></i>
+              <span>+91 93227 33511</span>
+            </div>
+
+            <!-- Location -->
+            <div class="flex items-center space-x-4 p-4 glassmorphism rounded-xl hover:neon-glow transition-all">
+              <i class="fas fa-map-marker-alt text-2xl text-blue-400"></i>
+              <span>Wagholi, Pune</span>
+            </div>
+          </div>
+        </div>
+        <div class="glassmorphism rounded-3xl p-8 scroll-reveal">
+          <h3 class="text-2xl font-bold mb-6 gradient-text">Send Me a Message</h3>
+          <div class="aspect-w-16 aspect-h-9">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSdfMrTxbqtCDpEmO5LGlR_xEkt5dYTXQKZuDAUgocZ4M8Pt7w/viewform?usp=dialog"
+              width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0" class="rounded-xl w-full">
+              Loading…
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 glassmorphism">
+    <div class="container mx-auto px-6 text-center">
+      <p class="text-gray-400">🥳 That’s all, folks! But maybe it’s just the beginning for us?</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const connectBtn = document.getElementById('connect-btn');
+      const contactSection = document.getElementById('contact');
+
+      if (connectBtn && contactSection) {
+        connectBtn.addEventListener('click', () => {
+          contactSection.scrollIntoView({ behavior: 'smooth' });
+        });
+      }
+    });
+  </script>
+
+  <script src="script.js"></script>
+  <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'9607ecede4a83fea',t:'MTc1MjczNjI4OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+</html>

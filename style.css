@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+  scroll-padding-top: 100px; /* adjust based on your navbar height */
+}
+
+
+.serif {
+    font-family: 'Playfair Display', serif;
+}
+
+:root {
+    --primary-bg: #0f0f23;
+    --secondary-bg: #1a1a2e;
+    --accent-blue: #4f46e5;
+    --accent-violet: #7c3aed;
+    --neon-cyan: #00f5ff;
+    --neon-pink: #ff0080;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --text-primary: #ffffff;
+    --text-secondary: #a1a1aa;
+}
+
+.light-mode {
+    --primary-bg: #f8fafc;
+    --secondary-bg: #ffffff;
+    --glass-bg: rgba(255, 255, 255, 0.25);
+    --glass-border: rgba(255, 255, 255, 0.18);
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+}
+
+body {
+    background: var(--primary-bg);
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
+.glassmorphism {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* Optional Enhancements */
+.glassmorphism:hover {
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.glassmorphism img {
+  transition: transform 0.4s ease;
+}
+
+.glassmorphism:hover img {
+  transform: scale(1.05);
+}
+
+
+.gradient-text {
+    background: linear-gradient(90deg, #f0e9ff 0%, #6366f1 100%, #fbbf24 0%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.neon-glow {
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.5), 0 0 40px rgba(124, 58, 237, 0.3);
+}
+
+.floating-icon {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+}
+
+.scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet));
+    height: 8px;
+    border-radius: 4px;
+    transition: width 2s ease;
+}
+
+.project-card {
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(79, 70, 229, 0.3);
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent-blue), var(--accent-violet));
+    transform: translateX(-50%);
+}
+
+.bg-shapes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(30px);
+    opacity: 0.1;
+    animation: moveShapes 20s infinite linear;
+}
+
+@keyframes moveShapes {
+    0% { transform: translateX(-100px) translateY(-100px) rotate(0deg); }
+    100% { transform: translateX(100px) translateY(100px) rotate(360deg); }
+}
+
+.hero-title {
+    font-size: clamp(3rem, 8vw, 8rem);
+    font-weight: 900;
+    line-height: 0.9;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, #f0e9ff 25%, #6366f1 50%, #fbbf24 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Fade-Up Animation */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  opacity: 0;
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+/* Delay utility classes */
+.delay-100 {
+  animation-delay: 0.1s;
+}
+.delay-200 {
+  animation-delay: 0.2s;
+}
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.scroll-reveal.revealed.animate-fade-up {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+.timeline-dot-left {
+  left: 102.2%;
+  top: 45%;
+}
+
+.timeline-dot-right {
+  left: -5.5%;
+  top: 45%;
+}
+
+.geS5n.Jj6Lae {
+  background-color: #404050 !important;
+}
+
+.M7eMe, .M7eMe .Wic03c .tL9Q4c, .M7eMe .I9OJHe .KRoqRc, .M7eMe .PyrB4, .M7eMe .snByac {
+  color: #ffffff !important;
+}
+
+.RdH0ib .zHQkBf, .RdH0ib .tL9Q4c {
+  color: #ffffff;
+}
