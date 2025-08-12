@@ -69,7 +69,7 @@
       </p>
 
       <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
-        <a href="https://drive.google.com/uc?export=download&id=1PjaqvExOMnYZYW0wf9zjBa4smscKthfB" download
+        <a href="https://drive.google.com/uc?export=download&id=1zLChROigG5RdT72KnzRM6AM86YvwL5gq" download
           class="inline-block">
           <button
             class="px-8 py-4 bg-gradient-to-r from-blue-600 to-violet-600 rounded-full font-semibold hover:neon-glow transition-all transform hover:scale-105">
@@ -92,7 +92,7 @@
       <h2 class="text-7xl font-bold text-center mb-16 scroll-reveal hero-title serif gradient-text leading-tight">About
         Me</h2>
 
-      <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="photo_content flex flex-col md:flex-row items-center justify-center gap-12 px-6 lg:px-32">
         <!-- Lottie Animation or Image -->
         <div class="scroll-reveal flex justify-center">
           <div class="glassmorphism rounded-3xl w-80 h-96 flex items-center justify-center overflow-hidden">
@@ -101,8 +101,8 @@
         </div>
 
         <!-- About Content -->
-        <div class="scroll-reveal glassmorphism rounded-3xl p-8">
-          <h3 class="text-2xl font-bold mb-6 gradient-text">Passionate Developer & Innovator</h3>
+        <div class="scroll-reveal glassmorphism rounded-3xl p-8 content">
+          <h3 class="text-2xl font-bold mb-6 gradient-text">I am Hrushikesh Kale - Passionate Developer & Innovator</h3>
           <p class="text-gray-300 mb-6 leading-relaxed text-justify">
             As a passionate and skilled Final year Computer Science undergraduate specializing in Artificial
             Intelligence, I aspire to contribute to innovative
@@ -704,16 +704,38 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="py-8 glassmorphism">
     <div class="container mx-auto px-6 text-center">
       <p>🥳 That’s all, folks! But maybe it’s just the beginning for us? </p>
-      <p>Unique Visitors: <span class="goatcounter-uniques"></span></p>
+      <div>Unique visitors: <div id="stats" style="display: inline-block;"></div></div>
     </div>
   </footer>
 
   <script data-goatcounter="https://hrushi.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+          async src="//gc.zgo.at/count.js"></script>
+
+  <script>
+    let r = new XMLHttpRequest();
+    r.addEventListener('load', function() {
+      document.querySelector('#stats').innerText = JSON.parse(this.responseText).count;
+    });
+
+    r.open('GET', 'https://hrushi.goatcounter.com/counter/TOTAL.json');
+    r.send();
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const connectBtn = document.getElementById('connect-btn');
+      const contactSection = document.getElementById('contact');
+
+      if (connectBtn && contactSection) {
+        connectBtn.addEventListener('click', () => {
+          contactSection.scrollIntoView({ behavior: 'smooth' });
+        });
+      }
+    });
+  </script>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
